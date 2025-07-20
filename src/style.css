@@ -1,0 +1,51 @@
+body {
+    background: rgb(0, 242, 96);
+    background: linear-gradient(90deg, rgba(0, 242, 96, 1) 12%, rgba(33, 144, 255, 1) 100%);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.painel-principal {
+    justify-content: center;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.painel-principal > .labelInput {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.painel-principal > .areaTxtImgConversaoTexto {
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.painel-principal > .botaoCopiaTexto {
+    text-align: center;
+    margin-top: 16px;
+    display: none;
+}
+
+.painel-principal > .botaoDownload {
+    text-align: center;
+    margin-top: 16px;
+    display: none;
+}
+
+.painel-principal > .botaoCopiaTexto > button {
+    border: solid #ED3333 1px;
+    background: #b0f577;
+    color: #0e0d0d;
+    border-radius: 5px;
+    height: 30px;
+   
+}
+
+.painel-principal > .botaoCopiaTexto > button:hover {
+    border: solid #ED3333 1px;
+    background: #66a3e9;
+    border-radius: 5px;
+}
