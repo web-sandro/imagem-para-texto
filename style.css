@@ -1,51 +1,93 @@
 body {
-    background: rgb(0, 242, 96);
-    background: linear-gradient(90deg, rgba(0, 242, 96, 1) 12%, rgba(33, 144, 255, 1) 100%);
-    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* fundo suave */
+    background: linear-gradient(135deg, #e3f2fd, #f1f8ff);
 }
 
+/* painel central */
 .painel-principal {
-    justify-content: center;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+    max-width: 500px;
+    width: 90%;
+    
+    margin: auto;
+    margin-top: 60px;
+    padding: 30px;
 
-.painel-principal > .labelInput {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
     text-align: center;
-    margin-bottom: 16px;
 }
 
-.painel-principal > .areaTxtImgConversaoTexto {
-    text-align: left;
-    margin-bottom: 16px;
+/* título */
+.painel-principal h1 {
+    margin-bottom: 20px;
+    color: #333;
 }
 
-.painel-principal > .botaoCopiaTexto {
-    text-align: center;
-    margin-top: 16px;
-    display: none;
+/* upload */
+.labelInput label {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #e3f2fd;
+    color: #1976d2;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.painel-principal > .botaoDownload {
-    text-align: center;
-    margin-top: 16px;
-    display: none;
+.labelInput label:hover {
+    background: #bbdefb;
 }
 
-.painel-principal > .botaoCopiaTexto > button {
-    border: solid #ED3333 1px;
-    background: #b0f577;
-    color: #0e0d0d;
-    border-radius: 5px;
-    height: 30px;
-   
+/* área de texto + imagem */
+.areaTxtImgConversaoTexto {
+    margin-top: 20px;
 }
 
-.painel-principal > .botaoCopiaTexto > button:hover {
-    border: solid #ED3333 1px;
-    background: #66a3e9;
-    border-radius: 5px;
+textarea {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    padding: 12px;
+    resize: none;
+    outline: none;
+    font-size: 14px;
+    background: #fafafa;
+}
+
+/* imagem */
+.areaTxtImgConversaoTexto img {
+    margin-top: 15px;
+    max-width: 100%;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+/* botão */
+.botaoCopiaTexto {
+    margin-top: 20px;
+}
+
+.botaoCopiaTexto button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    
+    background: #4caf50;
+    color: white;
+    font-size: 14px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* hover botão */
+.botaoCopiaTexto button:hover {
+    background: #43a047;
+    transform: translateY(-2px);
 }
